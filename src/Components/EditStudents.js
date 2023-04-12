@@ -32,7 +32,7 @@ const EditStudents = ({studentsData,setStudents}) => {
                 yearsOfExperience : experience
               }
 
-      const response = await fetch(`https://63ae5976ceaabafcf177ee86.mockapi.io/student/${editId}`, {
+      const response = await fetch(`https://backend-deploy-delta.vercel.app/student/${editId}`, {
         method :"PUT", 
         body : JSON.stringify(updatedObj),
         headers : {

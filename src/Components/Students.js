@@ -23,7 +23,7 @@ if (!localStorage.getItem("user-name")){
   //delete a new data
   const deleteStudentData = async (studID) =>{
         try {
-          const response = await fetch(`https://63ae5976ceaabafcf177ee86.mockapi.io/student/${studID}`, {
+          const response = await fetch(`https://backend-deploy-delta.vercel.app/${studID}`, {
             method :"DELETE", 
           }); 
           const data = await response.json()
