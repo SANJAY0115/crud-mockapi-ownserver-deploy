@@ -11,7 +11,7 @@ const StudentProfile = ({studentsData}) => {
     description= "Inidividual Student Details"
     >
       <div>
-        {" "}
+        <h1> </h1>
         <h2>Studnet Name: {student.name}</h2>
         <p> Gender: {student.gender} </p>
         <p>Batch : {student.batch} </p>

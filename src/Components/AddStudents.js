@@ -46,7 +46,7 @@ const handleChange = (name) => (event) =>{
   }); 
    const data = await response.json()
    console.log(data)
-       setStudents([...studentsData, data])
+       setStudents([...studentsData, data.data])
        setValues({
         ...values, 
         name:"",
