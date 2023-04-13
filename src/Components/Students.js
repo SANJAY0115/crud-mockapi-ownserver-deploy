@@ -23,7 +23,7 @@ if (!localStorage.getItem("user-name")){
   //delete a new data
   const deleteStudentData = async (studID) =>{
         try {
-          const response = await fetch(`https://backend-deploy-delta.vercel.app/${studID}`, {
+          const response = await fetch(`https://backend-deploy-delta.vercel.app/students/${studID}`, {
             method :"DELETE", 
           }); 
           const data = await response.json()
